@@ -266,7 +266,7 @@ h1 {
 }
 
 /* Section headings */
-h3 {
+h2 {
     font-size: 11px;
     font-weight: 600;
     text-transform: uppercase;
@@ -648,7 +648,7 @@ h3 {
     }
 
     /* Clean up colors for print */
-    h3 { color: #555; }
+    h2 { color: #555; }
     .job { border-left-color: #999; }
 
     /* Avoid page breaks inside jobs */

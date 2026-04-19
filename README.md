@@ -33,9 +33,10 @@ assets/
 - **Certifications carousel** — drag to scroll, click opens Credly badge; extra certs hidden behind "See More"
 - **Collapsible work history** — 2 recent jobs visible, older ones expandable
 - **Availability status** — controlled via `status.txt` (set first line to `true` to show badge)
-- **Seasonal easter eggs** — Santa hat + snow in December; party hat + confetti on Sep 8
+- **Seasonal easter eggs** — Santa hat + snow in December; party hat + confetti on Sep 8; SVG assets are lazy-loaded (only fetched when the condition is met)
 - **Scroll animations** — sections fade in on scroll via Intersection Observer
 - **Print styles** — `@media print` reveals all hidden content, removes interactive elements
+- **JSON-LD structured data** — `Person` schema in `<head>` for Google rich results (name, job title, location, sameAs links, knowsAbout)
 
 ## Controlling availability status
 

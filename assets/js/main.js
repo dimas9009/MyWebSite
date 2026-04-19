@@ -53,7 +53,10 @@ function initSeasonalEffects() {
 }
 
 function showHat(selector) {
-    document.querySelector(selector).style.display = 'block';
+    const wrapper = document.querySelector(selector);
+    const img = wrapper.querySelector('img[data-src]');
+    if (img) img.src = img.dataset.src;
+    wrapper.style.display = 'block';
 }
 
 function startSnow() {

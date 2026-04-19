@@ -26,8 +26,33 @@
     <meta name="twitter:title" content="Dmitrii Bakun — Senior .NET Developer, 14+ years">
     <meta name="twitter:description" content="Senior C# / .NET Developer based in Rotterdam. 14+ years of experience in full-stack development, Azure and AWS certified.">
 
+    <link rel="preload" as="image" href="assets/Main_photo.png">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="stylesheet" href="style.css">
+
+    <!-- Structured data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Dmitrii Bakun",
+        "url": "https://bakun.net/",
+        "image": "https://bakun.net/assets/Main_photo.png",
+        "email": "dvbakun@gmail.com",
+        "jobTitle": "Senior Software Engineer",
+        "description": "Senior C# / .NET Developer based in Rotterdam with 14+ years of experience in full-stack development, Azure and AWS certified.",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Rotterdam",
+            "addressCountry": "NL"
+        },
+        "sameAs": [
+            "https://www.linkedin.com/in/dmitrii-bakun",
+            "https://github.com/dimas9009"
+        ],
+        "knowsAbout": ["C#", ".NET", "TypeScript", "React", "Angular", "AWS", "Azure", "SQL", "Playwright", "Microservices"]
+    }
+    </script>
 </head>
 <body>
     <div class="main-container">
@@ -35,8 +60,8 @@
         <!-- Photo panel -->
         <div class="photo-panel">
             <!-- Seasonal hats — shown via JS on specific dates -->
-            <div class="party-hat"><img src="assets/svg/party-hat.svg" alt=""></div>
-            <div class="santa-hat"><img src="assets/svg/santa-hat.svg" alt=""></div>
+            <div class="party-hat"><img src="data:," data-src="assets/svg/party-hat.svg" alt=""></div>
+            <div class="santa-hat"><img src="data:," data-src="assets/svg/santa-hat.svg" alt=""></div>
         </div>
 
         <!-- Main content -->
@@ -81,7 +106,7 @@
 
             <!-- Skills -->
             <section class="skills-section">
-                <h3>Skills</h3>
+                <h2>Skills</h2>
                 <div class="skills-groups">
                     <div class="skill-group">
                         <span class="skill-label">Core</span>
@@ -118,14 +143,14 @@
 
             <!-- Certifications -->
             <section class="badges-section">
-                <h3>Certifications</h3>
+                <h2>Certifications</h2>
                 <!-- Drag horizontally to scroll. Click opens badge on Credly. -->
                 <div class="certs-row">
                     <a href="https://www.credly.com/badges/9e86d58f-13c5-4e93-a505-37de337583fd/public_url" target="_blank" title="View badge on Credly">
-                        <img src="assets/badges/badge-cloud.png" alt="AWS Certified Cloud Practitioner">
+                        <img src="assets/badges/badge-cloud.png" alt="AWS Certified Cloud Practitioner" width="110" height="110">
                     </a>
                     <a href="https://www.credly.com/badges/f0ef396a-437d-456f-a83c-233c7cfec639/public_url" target="_blank" title="View badge on Credly">
-                        <img src="assets/badges/badge-ai.png" alt="AWS Certified AI Practitioner">
+                        <img src="assets/badges/badge-ai.png" alt="AWS Certified AI Practitioner" width="110" height="110">
                     </a>
 
                     <!-- Extra certs - hidden by default, revealed by "See More" button -->
@@ -160,7 +185,7 @@
 
             <!-- Experience -->
             <section class="experience-section">
-                <h3>Experience</h3>
+                <h2>Experience</h2>
                 <div class="timeline">
 
                     <!-- Visible jobs -->
